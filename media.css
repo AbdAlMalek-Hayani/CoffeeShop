@@ -1,0 +1,132 @@
+@media (max-width:991px) {
+    .nav {
+        display: none;
+    }
+    .nav.open {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 80%;
+        padding: 17px;
+        padding-left: 40px;
+        background-color: var(--second-color);
+        border-radius: 7px;
+    }
+    .nav.open li {
+        display: grid;
+        margin-top: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        width: fit-content;
+    }
+
+    .print {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .print::before {
+        content: '';
+        border-width: 19px;
+        border-style: solid;
+        border-color: transparent transparent var(--second-color)  transparent;
+        top: 14px;
+        left: 2px;
+        position: absolute;
+    }
+
+    .nav.open li:hover {
+        color: black;
+    
+    }
+
+
+    i.bx-menu {
+        display: block;
+    }
+
+
+    label {
+        top: 27px;
+    }
+    .landing-page {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .about-us {
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .about-us img {
+        width: 350px;
+        height: 300px;
+    }
+    .about-us .text {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .about-us h3 {
+        font-size: 20px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .about-us p {
+        font-size: 12px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .contact-us {
+        flex-direction: column;
+    }
+
+    .social {
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+
+
+}
+
+@media (max-width:1180px) {
+    .landing-page {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+
+@media (max-width:767px) {
+    .landing-page {
+        padding: 5px;
+        padding-bottom: 15px;
+    }
+    .landing-page .left img {
+        width: 300px;
+        padding: 10px;
+        margin-top: 70px;
+    }
+    .landing-page .right {
+        margin-left: 0;
+    }
+    .landing-page .right h3 {
+        line-height: 2;
+    }
+    .contact-us .left input {
+        width: fit-content;
+    }
+    .contact-us .center {
+        width: 380px;
+    }
+}
